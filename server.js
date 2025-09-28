@@ -58,6 +58,7 @@ app.use('/api/bus', require('./routes/busRoutes'));
 app.use('/api/arret', require('./routes/arretRoutes'));
 app.use('/api/localisation', require('./routes/localisationRoutes'));
 app.use('/api', require('./routes/statsRoutes'));
+app.use('/api/search', require('./routes/searchRoutes'));
 
 // Expose les fonctions de broadcast pour les contrôleurs
 app.locals.broadcastPosition = broadcastPosition;
